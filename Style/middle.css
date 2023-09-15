@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Poppins:ital,wght@0,700;1,700&display=swap');
+
+:root {
+  --PrimaryClr: hsl(0, 0%, 100%);
+  --clr-100-VeryPaleBlue: hsl(207, 100%, 98%);
+  --Pink: hsl(322, 100%, 66%);
+  --LightPink: hsl(321, 100%, 78%);
+  --LightRed: hsl(0, 100%, 63%);
+  --VeryDarkCyan: hsl(192, 100%, 9%);
+  --OpenSans: 'Open Sans', sans-serif;
+  --Poppins: 'Poppins', sans-serif;
+
+  --Open--400: 400;
+  --Open--600: 600;
+  --Open--700: 700;
+  --Poppins--700: 700;
+}
+
+
+section{
+  width: 100%;
+  height: auto;
+}
+
+.middle-container{
+  text-align: center;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-one{
+  background: var(--clr-100-VeryPaleBlue);
+}
+
+.top-image{
+  width: 100%;
+  display: block;
+}
+
+.box-container{
+  margin: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.5rem;
+  height: 100vh;
+  padding: 1rem 0;
+}
+
+.box-container img{
+  width: 80%;
+  align-self: center;
+}
+
+.box-container .landingBtn {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.text-container  h3 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  color: var(--VeryDarkCyan);
+}
+
+#LowerText .box-container h2{
+  font-family: var(--Poppins);
+  color: var(--VeryDarkCyan);
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+
+}
+
+.text-container p{
+  padding: 0 1rem;
+  color: var(--VeryDarkCyan);
+  font-family: var(--OpenSans);
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+
+
+.middleBtn{
+  border: none;
+  background: var(--Pink);
+  padding: .8rem 3rem;
+  border-radius: 25px;
+  color: var(--PrimaryClr);
+  font-family: var(--OpenSans);
+  font-weight: var(--Open--600);
+  letter-spacing: 1px;
+  transition: all 300ms ease-in-out;
+}
+
+.middleBtn:hover {
+  cursor: pointer;
+  background: var(--LightPink);
+}
+
+
+@media screen and (min-width: 828px) {
+
+  .box-container{
+    gap: 2rem;
+    height: auto;
+    padding: 10rem 3rem;
+    text-align: left;
+  }
+
+  .box-container{
+    flex-direction: row;
+  }
+
+  .box-one-one {
+    flex-direction: row-reverse;
+    max-width: 1440px;
+  }
+
+  .box-two-two{
+    max-width: 1440px;
+  }
+
+ 
+  .text-container{
+    flex: 1;
+  }
+
+  .box-container img {
+    flex: 1;
+  }
+
+  .text-container p{
+    padding: 0;
+  }
+
+  #read-build {
+    flex-direction: column;
+    max-width: 1440px;
+  }
+  
+}
